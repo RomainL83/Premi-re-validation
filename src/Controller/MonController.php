@@ -28,7 +28,6 @@ public function sendEmailAction(Request $request, MailerInterface $mailer): Resp
 
    $mailer->send($email);
 
-
 return $this->redirectToRoute('homepage');
 }
 }
